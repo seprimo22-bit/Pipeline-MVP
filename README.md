@@ -1,8 +1,5 @@
-# Pipeline-MVP
-Fact producing analyzer
 from flask import Flask, request, jsonify
 import datetime
-import re
 
 app = Flask(__name__)
 
@@ -26,7 +23,6 @@ class HybridPipeline:
     
     def run(self, text):
         pz = self.paper_zero(text)
-        # Simple vector scoring
         if "urgent" in text.lower(): self.vectors["TimePressure"] = 7
         if "should i" in text.lower(): self.vectors["AgencyControl"] = 5
         
@@ -53,3 +49,5 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+ flask
+gunicorn
