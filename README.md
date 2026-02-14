@@ -1,2 +1,10 @@
-# Pipeline-MVP
+## Purpose
+Fact extraction pipeline designed to provide structured, neutral information
+from complex inputs without interpretation bias.
+
+## Status
+MVP deployed and operational.
+
+## Future Development
+UI improvements, structured citations, pipeline refinement.# Pipeline-MVP
 Fact producing analyzer
