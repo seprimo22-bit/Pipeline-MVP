@@ -1,4 +1,10 @@
-def __init__(self):
+from flask import Flask, request, jsonify
+
+import datetime
+
+app = Flask(name)
+
+class HybridPipeline:def __init__(self):
 
     self.vectors = {
 
